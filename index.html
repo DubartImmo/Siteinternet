@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thom Dubart - Marchal Immobilier</title>
+    <style>
+        /* Couleurs personnalisées */
+        :root {
+            --couleur-fond: #2D3041; /* Fond gris foncé/bleu nuit */
+            --couleur-texte: #F59C0A; /* Texte orange vif */
+            --couleur-boutons: #FFFAF2; /* Boutons blanc cassé */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--couleur-fond);
+            color: var(--couleur-texte);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .profile-picture {
+            width: 250px; /* Largeur du rectangle */
+            height: 150px; /* Hauteur du rectangle */
+            border-radius: 20px; /* Bords arrondis */
+            object-fit: cover; /* Couvre l'espace sans déformation */
+            border: 4px solid var(--couleur-texte); /* Bordure orange */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: var(--couleur-fond); /* Texte en couleur de fond */
+            background-color: var(--couleur-boutons); /* Boutons blanc cassé */
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+            text-align: center;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-links a i {
+            margin-right: 10px;
+            color: var(--couleur-fond); /* Icônes en couleur de fond */
+        }
+    </style>
+    <!-- Ajoutez FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Photo de profil -->
+        <img src="images/logo.og.png" alt="Photo de Thom Dubart" class="profile-picture">
+
+        <!-- Titre ou nom -->
+        <h1>Thomas Dubart</h1>
+
+        <!-- Liens vers les réseaux sociaux -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/dubart.thom/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram DUBART
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61574036012863" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook DUBART
+            </a>
+            <a href="https://www.facebook.com/marchalimmobilier" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook Marchal Immobilier
+            </a>
+            <a href="https://www.marchalimmobilier.com" target="_blank">
+                <i class="fas fa-globe"></i> Site internet
+            </a>
+        </div>
+    </div>
+</body>
+</html>
